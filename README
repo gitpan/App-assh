@@ -1,0 +1,15 @@
+NAME
+    App::assh - A wrapper around autossh.
+
+VERSION
+    version 0.1.0
+
+AUTHOR
+    DBR <dbr@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2013 by DBR.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+

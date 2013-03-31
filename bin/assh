@@ -1,0 +1,43 @@
+#!/usr/bin/env perl
+
+#  PODNAME: App::assh
+# ABSTRACT: A wrapper around autossh.
+
+use v5.10;
+use strict;
+use warnings;
+
+use FindBin;
+
+use lib "$FindBin::Bin/../lib";
+
+use App::assh;
+
+my $app = App::assh->new;
+$app->run(@ARGV);
+__END__
+=pod
+
+=encoding utf-8
+
+=head1 NAME
+
+App::assh - A wrapper around autossh.
+
+=head1 VERSION
+
+version 0.1.0
+
+=head1 AUTHOR
+
+DBR <dbr@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by DBR.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+

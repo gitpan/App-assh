@@ -3,7 +3,7 @@ BEGIN {
   $App::assh::AUTHORITY = 'cpan:DBR';
 }
 {
-  $App::assh::VERSION = '0.1.0';
+  $App::assh::VERSION = '1.0.0';
 }
 
 #  PODNAME: App::assh
@@ -86,9 +86,8 @@ method autossh_exec {
 
 no Moo;
 
-
-
 __END__
+
 =pod
 
 =encoding utf-8
@@ -99,7 +98,7 @@ App::assh - A wrapper around autossh.
 
 =head1 VERSION
 
-version 0.1.0
+version 1.0.0
 
 =head1 SYNOPSIS
 
@@ -107,11 +106,24 @@ A wrapper around autossh.
 
 =for Pod::Coverage ports_config_file  ssh_config_file
 
+=head1 MOTIVATION
+
+`autossh` is a nifty little ssh-keepalive-connection-holder.
+
+Passing in the ports for the keepalive can be clumsy though: `assh` helps you to avoid that.
+
 =head1 USAGE
 
      assh
- 
      assh HOSTNAME
+
+=head1 REQUIREMENTS
+
+First, you will need a file `~E<sol>.sshE<sol>config`. It looks something like this:
+
+     Host foo
+     HostName bar.example.com
+     User baz
 
 =head1 ATTRIBUTES
 
@@ -147,16 +159,26 @@ ports_config_file: The path to the ports config (this is what I have chosen): `~
 
 =back
 
+=head1 SEE ALSO
+
+=over
+
+=item *
+
+autossh: E<lt>http:E<sol>E<sol>www.harding.motd.caE<sol>autosshE<sol>E<gt>
+
+=back
+
 =head1 AUTHOR
 
 DBR <dbr@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by DBR.
+This software is Copyright (c) 2013 by DBR.
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+This is free software, licensed under:
+
+  DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE, Version 2, December 2004
 
 =cut
-

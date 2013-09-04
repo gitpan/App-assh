@@ -15,7 +15,9 @@ use App::assh;
 
 my $app = App::assh->new;
 $app->run(@ARGV);
+
 __END__
+
 =pod
 
 =encoding utf-8
@@ -26,7 +28,7 @@ App::assh - A wrapper around autossh.
 
 =head1 VERSION
 
-version 0.1.0
+version 1.0.0
 
 =head1 AUTHOR
 
@@ -34,10 +36,10 @@ DBR <dbr@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by DBR.
+This software is Copyright (c) 2013 by DBR.
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+This is free software, licensed under:
+
+  DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE, Version 2, December 2004
 
 =cut
-

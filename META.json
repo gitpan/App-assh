@@ -4,9 +4,9 @@
       "DBR <dbr@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
    "license" : [
-      "perl_5"
+      "unrestricted"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -39,8 +39,9 @@
             "Moo" : "0",
             "MooX::Options" : "0",
             "MooX::Types::MooseLike::Base" : "0",
+            "lib" : "0",
             "methods" : "0",
-            "perl" : "5.010",
+            "perl" : "v5.10.0",
             "strict" : "0",
             "true" : "0",
             "warnings" : "0"
@@ -53,20 +54,16 @@
             "File::Spec::Functions" : "0",
             "List::Util" : "0",
             "Scalar::Util" : "0",
-            "Test::CheckDeps" : "0.002",
+            "Test::CheckDeps" : "0.006",
             "Test::More" : "0.94",
             "Test::UseAllModules" : "0"
          }
       }
    },
-   "provides" : {
-      "App::assh" : {
-         "file" : "lib/App/assh.pm",
-         "version" : "v0.1.0"
-      }
-   },
+   "provides" : {},
    "release_status" : "stable",
-   "version" : "0.1.0",
+   "resources" : {},
+   "version" : "1.0.0",
    "x_authority" : "cpan:DBR"
 }
 

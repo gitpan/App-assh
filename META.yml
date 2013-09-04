@@ -9,32 +9,31 @@ build_requires:
   List::Util: 0
   Module::Build: 0.3601
   Scalar::Util: 0
-  Test::CheckDeps: 0.002
+  Test::CheckDeps: 0.006
   Test::More: 0.94
   Test::UseAllModules: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
-license: perl
+generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921'
+license: unrestricted
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: App-assh
-provides:
-  App::assh:
-    file: lib/App/assh.pm
-    version: v0.1.0
+provides: {}
 requires:
   FindBin: 0
   Moo: 0
   MooX::Options: 0
   MooX::Types::MooseLike::Base: 0
+  lib: 0
   methods: 0
-  perl: 5.010
+  perl: v5.10.0
   strict: 0
   true: 0
   warnings: 0
-version: 0.1.0
+resources: {}
+version: 1.0.0
 x_authority: cpan:DBR

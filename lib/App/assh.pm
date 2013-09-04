@@ -3,7 +3,7 @@ BEGIN {
   $App::assh::AUTHORITY = 'cpan:DBR';
 }
 {
-  $App::assh::VERSION = '1.0.0';
+  $App::assh::VERSION = '1.1.0';
 }
 
 #  PODNAME: App::assh
@@ -98,7 +98,7 @@ App::assh - A wrapper around autossh.
 
 =head1 VERSION
 
-version 1.0.0
+version 1.1.0
 
 =head1 SYNOPSIS
 
@@ -124,6 +124,26 @@ First, you will need a file `~E<sol>.sshE<sol>config`. It looks something like t
      Host foo
      HostName bar.example.com
      User baz
+
+With this, you can already leverage standard `ssh` connections:
+
+     ssh foo
+
+... instead of
+
+     ssh baz@bar.example.com
+
+Next, generate a file `~E<sol>.autossh_rc` with the following format:
+
+     foo 12345
+
+... with the first entry on the line representing your `Host` in `~E<sol>.sshE<sol>config` and the second item on the line being the port over which to keep the autossh connection alive.
+
+Now you can permanently connect using:
+
+     assh foo
+
+... with the connection kept alive across network switches and computer shutdowns.
 
 =head1 ATTRIBUTES
 

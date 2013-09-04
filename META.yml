@@ -30,10 +30,10 @@ requires:
   MooX::Types::MooseLike::Base: 0
   lib: 0
   methods: 0
-  perl: v5.10.0
+  perl: 5.010
   strict: 0
   true: 0
   warnings: 0
 resources: {}
-version: 1.0.0
+version: 1.1.0
 x_authority: cpan:DBR

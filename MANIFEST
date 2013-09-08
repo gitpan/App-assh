@@ -11,6 +11,7 @@ README.md
 bin/assh
 dist.ini
 lib/App/assh.pm
+meta.ini
 t/00-check-deps.t
 t/00-load.t
 t/00-report-prereqs.t

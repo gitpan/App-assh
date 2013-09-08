@@ -3,7 +3,7 @@ BEGIN {
   $App::assh::AUTHORITY = 'cpan:DBR';
 }
 {
-  $App::assh::VERSION = '1.1.1';
+  $App::assh::VERSION = '1.1.2';
 }
 
 #  PODNAME: App::assh
@@ -98,7 +98,7 @@ App::assh - A wrapper around autossh.
 
 =head1 VERSION
 
-version 1.1.1
+version 1.1.2
 
 =head1 SYNOPSIS
 

@@ -18,7 +18,7 @@ my %module_build_args = (
     "DBR <dbr\@cpan.org>"
   ],
   "dist_name" => "App-assh",
-  "dist_version" => "1.1.1",
+  "dist_version" => "1.1.2",
   "license" => "unrestricted",
   "module_name" => "App::assh",
   "recommends" => {},
@@ -30,7 +30,7 @@ my %module_build_args = (
     "MooX::Types::MooseLike::Base" => 0,
     "lib" => 0,
     "methods" => 0,
-    "perl" => "v5.10.0",
+    "perl" => "5.010",
     "strict" => 0,
     "true" => 0,
     "warnings" => 0
